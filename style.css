@@ -1,66 +1,106 @@
 body {
-    margin: 0;
-    font-family: Arial;
-    background: #0f0f0f;
-    color: white;
-    text-align: center;
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0f0f0f;
+color:white;
+text-align:center;
 }
 
-header {
-    padding: 20px;
-    background: black;
+/* Loader */
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999;
 }
 
-.hero {
-    padding: 60px;
-    background: linear-gradient(black, #222);
+/* Header */
+header{
+padding:20px;
+background:black;
 }
 
-.btn {
-    background: #d4af37;
-    padding: 10px 20px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+/* Hero */
+.hero{
+height:80vh;
+background:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 }
 
-.services, .combo, .gallery, .location {
-    padding: 30px;
+.btn{
+background:linear-gradient(45deg,gold,orange);
+padding:12px 25px;
+border-radius:25px;
+color:black;
+text-decoration:none;
+font-weight:bold;
 }
 
-.card {
-    background: #1a1a1a;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 10px;
+/* Sections */
+.services,.combo,.gallery,.testimonials,.location{
+padding:30px;
 }
 
-.highlight {
-    border: 2px solid #d4af37;
+/* Cards */
+.card{
+background:#1a1a1a;
+margin:15px;
+padding:20px;
+border-radius:15px;
+transition:0.3s;
 }
 
-.gallery img {
-    width: 30%;
-    margin: 5px;
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px gold;
 }
 
-iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
+.services,.combo,.testimonials{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-footer {
-    background: black;
-    padding: 20px;
+/* Highlight */
+.highlight{
+border:2px solid gold;
 }
 
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
+/* Gallery */
+.gallery img{
+width:30%;
+border-radius:10px;
+margin:5px;
+}
+
+/* Map */
+iframe{
+width:100%;
+height:300px;
+border:0;
+}
+
+/* Footer */
+footer{
+background:black;
+padding:20px;
+}
+
+/* WhatsApp */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+color:white;
 }
